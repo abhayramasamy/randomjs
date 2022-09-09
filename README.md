@@ -33,13 +33,48 @@ returns a "r" digit whole number only
 
 ### randchar()
 returns a random character among:
-######## ~`!1@2#$4%5^6&7*8(9)0_QWERTYUIOPASDFGHJKLZXCVBNM-+=|;;;:::<>,.??qwrtyeuiopasdfghjklzxcvbnm` 
+ `!1~@2#$4%5^6&7*8(9)0_QWERTYUIOPASDFGHJKLZXCVBNM-+=|;;;:::<>,.??qwrtyeuiopasdfghjklzxcvbnm` 
 
 ### randabs()
 returns a random alphabet
 
 ### randstr()
-returns a random string of alphabets
-' eaxample: randstr() >>> dmatdisvh' 
+returns a random string of alphabets the length doesnt exceed 26 characters
+###### eaxample: randstr() >>> dmatdisvheraw
 however string length can be passed in the arguments
-'example: randstr(9) >>> lpxkznmxn' 
+###### example: randstr(9) >>> lpxkznmxn 
+
+### randInt(x,y)
+returns a random integer x and y 
+
+### randGauss()
+returns a random gaussian random
+
+### randomGauss(v)
+random gaussian function
+
+### randWholes(x,y)
+random whole numbers
+
+### getRndInteger(min,max)
+random integers returning function
+
+### randchoose()
+returns a random item from a list of arguments passed into this function
+
+### randchooselist(arr)
+returns a random  item from array passed into the function 
+ 
+ ### randSmooth(t)
+ returns a random floating point approximately equal to t
+ 
+ ### randSmooth(t,smoothness)
+ returns a number within a range of smoothness 
+ (geneally not necessary , it is taken to be 0.5 in default)
+ 
+ ## sprout(n) and tremor(x,y,f=10)
+ This is a function that can return oscillating range of numbers between x and y
+ first it oscillates 10 floating point values around x then 10 floating point values around y shifts back to x and so on.
+ f is taken 10 to be default it can be any number
+ it is necessary to call the sprout() function before tremor() it can fix the range between values oscillate it is set default to 0.3
+ 
